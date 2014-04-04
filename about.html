@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<title>Kenny Leung</title>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	<link rel='stylesheet' type='text/css' href='css/open-sans.css'>
+	<script type="text/javascript" src="js/parallax.js"></script>
+	<script type="text/javascript" src="js/requestanimframe.js"></script>
+	<script type="text/javascript" src="js/responsivetext.js"></script>
+	<script type="text/javascript">
+	$(function(){
+  		//Change style of selected page
+      	var menubar = $("#menuBar")
+      	var links = menubar.find("a");
+      	links.each(function (){
+	      	if (this.href == window.location.href){
+	      		$(this).addClass("selectedMenuItem");
+	      	}
+	      	else {
+	      		$(this).addClass("menuItem");
+	      	}
+	      });
+    	});
+	</script>
+</head>
+<body>
+<div id="menuBar">
+	<a href="contact.html" class="light menuText"> Contact </a>
+	<a href="blog.html" class="light menuText"> Microblog </a>
+	<a href="about.html" class="light menuText"> About Me </a>
+	<a href="home.html" class="light menuText"> Home </a>
+</div>
+<div id="wrap">
+	<div class="part">
+		<div id="header">
+			<div class="profile">
+				<img class="profile" src="images/profile.jpg"></img>
+			</div>
+			<div class="dark profileText">
+				<div class="headerText">Kenny Leung</div>
+				<div class="smallText">Engineer / Software Developer / Project Manager / Mobile Enthusiast</div>
+			</div>
+		</div>
+	</div>
+	<div class="part pane">
+		<a href="https://uwaterloo.ca/find-out-more/programs/management-engineering">
+			<img src="images/UW.jpg">
+			<div class="gradient"></div>
+			<div class="paneText middle light">
+				<div class="paneHeader">
+					<div class="headerText">
+						University Of Waterloo
+					</div>
+					<div class="subheaderText">
+						Candidate for BaSC
+					</div>
+				</div>
+				<div class="paneBody">
+					<ul class="normalText">
+						<li>Management Engineering, Honors</li>
+						<li>Fascinated by various algorithms and optimization methodology</li>
+					</ul>
+				</div>
+			</div>
+		</a>
+	</div>
+	<div class="part pane">
+		<img src="images/iPad.jpg">
+		<div class="gradient"></div>
+		<div class="paneText middle light">
+			<div class="paneHeader">
+				<div class="headerText">
+					Xtreme Labs
+				</div>
+				<div class="subheaderText">
+					Product Manager
+				</div>
+			</div>
+			<div class="paneBody">
+				<ul class="normalText">
+					<li>Defined features for the next generation of Mobile</li>
+					<li>Identified and resolved customer pain points, to ensure world class UI and UX</li>
+					<li>Worked with designers to draft wireframes, mockups and interactive prototypes</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="part pane">
+		<img src="images/apps.jpg">
+		<div class="gradient"></div>
+		<div class="paneText middle light">
+			<div class="paneHeader">
+				<div class="headerText">
+					Xtreme Labs
+				</div>
+				<div class="subheaderText">
+					Agile Engineer
+				</div>
+			</div>
+			<div class="paneBody">
+				<ul class="normalText">
+					<li>Developed mobile applications in a pair programming environment</li>
+					<li>Suggested and developed an in-house resource management tool</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="part pane">
+		<img src="images/blackberry.jpg">
+		<div class="gradient"></div>
+		<div class="paneText middle light">
+			<div class="paneHeader">
+				<div class="headerText">
+					Blackberry Ltd
+				</div>
+				<div class="subheaderText">
+					Automation Software Developer
+				</div>
+			</div>
+			<div class="paneBody">
+				<ul class="normalText">
+					<li>Automated out of date manufacturing processes</li>
+					<li>Improved upon existing applications by gathering and applying stakeholder feedback</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="part pane">
+		<img src="images/baggage.jpg">
+		<div class="gradient"></div>
+		<div class="paneText middle light">
+			<div class="paneHeader">
+				<div class="headerText">
+					Brock Solutions
+				</div>
+				<div class="subheaderText">
+					Software Developer
+				</div>
+			</div>
+			<div class="paneBody">
+				<ul class="normalText">
+					<li>Designed, implemented and deployed an in-house project management application from start to finish</li>
+					<li>Researched and applied various sorting algorithms for airport baggage systems</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="part">
+		<div id="footer">
+			<div class="dark footerText">
+				<div class="headerText">Let's Connect</div>
+				<div class="smallText">Kennyleungg@gmail.com</div>
+				<div class="socialIcons" style="width:30%">
+					<table>
+						<td>
+							<a href="https://www.facebook.com/kkmleung">
+								<img src="images/FB.png"></img>
+							</a>
+						</td>
+						<td>
+							<a href="https://ca.linkedin.com/in/kennyleungg">
+								<img src="images/LI.png"></img>
+							</a>
+						</td>
+						<td>
+							<a href="https://plus.google.com/u/0/116972324332694504046/">
+								<img src="images/GP.png"></img>
+							</a>
+						</td>
+						<td>
+							<a href="mailto:kennyleungg@gmail.com?">
+								<img src="images/EM.png"></img>
+							</a>
+						</td>
+					</table>
+				</div>
+			<div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$("body").fitText();
+		// $(".part").each(function() {
+		// 	$(this).fitText();
+		// });
+	</script>
+</div>
+</body>
+</html>
