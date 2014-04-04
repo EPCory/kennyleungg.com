@@ -12,37 +12,67 @@
 (function( $ ){
   var listen = function(el,on,fn){(el.addEventListener||(on='on'+on)&&el.attachEvent)(on,fn,false)}
 
-  $.fn.fitPane = function() {
+  $.fn.fitText = function() {
 
     return this.each(function(){
 
       // Store the object
-      var $pane = $(this);
-      var $headerText = $pane.find(".headerText");
-      var $subheaderText = $pane.find(".subheaderText");
-      var $normalText = $pane.find(".normalText");
-      var $smallText = $pane.find(".smallText");
-
+      var $root = $(this);
+      var $headerText = $root.find(".headerText");
+      var $subheaderText = $root.find(".subheaderText");
+      var $normalText = $root.find(".normalText");
+      var $smallText = $root.find(".smallText");
+      var $menuText = $root.find(".menuText");
       
-      // Resizer() resizes items based on the object width divided by the compressor * 10
       var resizer = function () {
-        $headerText.css('font-size', Math.max(Math.min($pane.width() / (20), parseFloat('54px')), parseFloat('32px')));
-        $subheaderText.css('font-size', Math.max(Math.min($pane.width() / (30), parseFloat('30px')), parseFloat('18px')));
-        $normalText.css('font-size', Math.max(Math.min($pane.width() / (35), parseFloat('26px')), parseFloat('18px')));
-        $smallText.css('font-size', Math.max(Math.min($pane.width() / (50), parseFloat('22px')), parseFloat('16px')));
+        //Resize text, numbers were obtained manual testing
+        $headerText.css('font-size', Math.max(Math.min($root.width() / (25), parseFloat('54px')), parseFloat('32px')));
+        $subheaderText.css('font-size', Math.max(Math.min($root.width() / (35), parseFloat('30px')), parseFloat('18px')));
+        $normalText.css('font-size', Math.max(Math.min($root.width() / (45), parseFloat('26px')), parseFloat('18px')));
+        $smallText.css('font-size', Math.max(Math.min($root.width() / (55), parseFloat('22px')), parseFloat('16px')));
+        $menuText.css('font-size', Math.max(Math.min($root.width() / (55), parseFloat('24px')), parseFloat('22px')));
 
-        var paneText = $pane.find(".paneText");
-        if (paneText) {
-          var paneHeight = $pane.outerHeight(true);
-          var textHeight = $headerText.outerHeight(true) + $subheaderText.outerHeight(true) + $normalText.outerHeight(true) + $smallText.outerHeight(true);
-          textHeight += paneText[0]? parseInt(paneText.css('margin-top')) : 0;
-          if (textHeight > paneHeight) {
-            $normalText.fadeOut(100);
-          }
-          else
-          {
-            $normalText.fadeIn(100);
-          }
+        var paneText = $root.find(".paneText");
+        var pane = $root.find(".pane");
+        if (paneText && pane) {
+          var paneHeight = pane.outerHeight(true) * 0.95; //5% buffer, don't want text sticking to edge
+          console.log(paneHeight);
+          paneText.each(function() {
+            var currentPaneText = $(this);
+            var paneHeader = currentPaneText.find(".paneHeader");
+            var paneBody = currentPaneText.find(".paneBody");
+            var bodyLineItems = paneBody.find("li");
+            var textHeight = currentPaneText.position().top + parseFloat(currentPaneText.css("margin-top")) + paneHeader.outerHeight(true);
+            var bodyHeight = 0;
+            for (var i = 0; i < bodyLineItems.length;i++) {
+              var bodyLineItem = $(bodyLineItems[i]);
+              bodyHeight += bodyLineItem.outerHeight(true);
+
+              // console.log("Body height: " + bodyLineItem.outerHeight(true));
+              if (textHeight + bodyHeight > paneHeight) {
+                bodyLineItem.fadeOut(100);
+                // bodyLineItem.css("visibility","hidden");
+              }
+              else {
+                bodyLineItem.fadeIn(100);
+                // bodyLineItem.css("visibility","visible");
+              }
+            }
+            
+            // console.log(bodyLineItems);
+            // console.log(currentPaneText.position().top);
+            // var textHeight = $headerText.outerHeight(true) + $subheaderText.outerHeight(true) + $normalText.outerHeight(true) + $smallText.outerHeight(true);
+          });
+          
+          // var textHeight = $headerText.outerHeight(true) + $subheaderText.outerHeight(true) + $normalText.outerHeight(true) + $smallText.outerHeight(true);
+          // textHeight += paneText[0]? parseInt(paneText.css('margin-top')) : 0;
+          // if (textHeight > paneHeight) {
+          //   $normalText.fadeOut(100);
+          // }
+          // else
+          // {
+          //   $normalText.fadeIn(100);
+          // }
         }
       };
 
