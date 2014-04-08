@@ -27,7 +27,7 @@
       var resizer = function () {
         //Resize text, numbers were obtained manual testing
         $headerText.css('font-size', Math.max(Math.min($root.width() / (25), parseFloat('54px')), parseFloat('32px')));
-        $subheaderText.css('font-size', Math.max(Math.min($root.width() / (35), parseFloat('30px')), parseFloat('18px')));
+        $subheaderText.css('font-size', Math.max(Math.min($root.width() / (35), parseFloat('30px')), parseFloat('20px')));
         $normalText.css('font-size', Math.max(Math.min($root.width() / (45), parseFloat('26px')), parseFloat('18px')));
         $smallText.css('font-size', Math.max(Math.min($root.width() / (55), parseFloat('22px')), parseFloat('16px')));
         $menuText.css('font-size', Math.max(Math.min($root.width() / (55), parseFloat('24px')), parseFloat('22px')));
@@ -36,7 +36,6 @@
         var pane = $root.find(".pane");
         if (paneText && pane) {
           var paneHeight = pane.outerHeight(true) * 0.95; //5% buffer, don't want text sticking to edge
-          console.log(paneHeight);
           paneText.each(function() {
             var currentPaneText = $(this);
             var paneHeader = currentPaneText.find(".paneHeader");
@@ -48,31 +47,14 @@
               var bodyLineItem = $(bodyLineItems[i]);
               bodyHeight += bodyLineItem.outerHeight(true);
 
-              // console.log("Body height: " + bodyLineItem.outerHeight(true));
               if (textHeight + bodyHeight > paneHeight) {
                 bodyLineItem.fadeOut(100);
-                // bodyLineItem.css("visibility","hidden");
               }
               else {
                 bodyLineItem.fadeIn(100);
-                // bodyLineItem.css("visibility","visible");
               }
             }
-            
-            // console.log(bodyLineItems);
-            // console.log(currentPaneText.position().top);
-            // var textHeight = $headerText.outerHeight(true) + $subheaderText.outerHeight(true) + $normalText.outerHeight(true) + $smallText.outerHeight(true);
           });
-          
-          // var textHeight = $headerText.outerHeight(true) + $subheaderText.outerHeight(true) + $normalText.outerHeight(true) + $smallText.outerHeight(true);
-          // textHeight += paneText[0]? parseInt(paneText.css('margin-top')) : 0;
-          // if (textHeight > paneHeight) {
-          //   $normalText.fadeOut(100);
-          // }
-          // else
-          // {
-          //   $normalText.fadeIn(100);
-          // }
         }
       };
 
@@ -81,6 +63,7 @@
 
       // Call on resize. Opera debounces their resize by default.
       listen(window, 'resize', resizer);
+      listen(window, 'load', resizer);
 
     });
 
