@@ -235,18 +235,24 @@ a {
 	overflow: hidden;
 }
 
+#mountainLayers {
+	margin: 0;
+}
+
 #mountainLayers img{
 	display: block;
 	width: 120%;
-	height: 100%;
+	height: auto;
 	margin-left: -10%;
+
 }
 
 #sceneContainer {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	height: 50%;
+	height: auto;
 	width: 100%;
+	max-height: 40%;
 }
 /*-------HOMEPAGE----*/
