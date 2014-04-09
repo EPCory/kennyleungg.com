@@ -157,6 +157,7 @@ a {
 .pane {
 	padding-top: 45%; /*Needs to be less than the aspect ratio of the bg pictures*/
 	text-decoration: none;
+	background: #000; /*Default to black background if picture is not loaded*/
 }
 
 .paneHeader {
@@ -169,7 +170,6 @@ a {
 	left: 0;
 	width: 100%;
 	height: auto!important;
-	background: url("../images/loading.png");
 }
 
 .gradient {
