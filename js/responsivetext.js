@@ -28,9 +28,9 @@
         //Resize text, numbers were obtained manual testing
         $headerText.css('font-size', Math.max(Math.min($root.width() / (25), parseFloat('54px')), parseFloat('32px')));
         $subheaderText.css('font-size', Math.max(Math.min($root.width() / (35), parseFloat('30px')), parseFloat('22px')));
+        $menuText.css('font-size', Math.max(Math.min($root.width() / (35), parseFloat('28px')), parseFloat('24px')));
         $normalText.css('font-size', Math.max(Math.min($root.width() / (45), parseFloat('26px')), parseFloat('20px')));
         $smallText.css('font-size', Math.max(Math.min($root.width() / (55), parseFloat('22px')), parseFloat('18px')));
-        $menuText.css('font-size', Math.max(Math.min($root.width() / (55), parseFloat('24px')), parseFloat('22px')));
 
         var paneText = $root.find(".paneText");
         var pane = $root.find(".pane");
