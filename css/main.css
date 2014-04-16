@@ -279,4 +279,22 @@ a {
 	background: #EBEBEB;
 	overflow: auto;
 }
+
+.homeProfileText {
+	float:left;
+	width:70%;
+}
+
+.homeProfile {
+	float:left;
+	display:inline-block;
+	width:25%;
+	height:auto;
+	padding-left: 5%;
+}
+
+.homeProfile img {
+	border:0.4em solid black;
+	width: 100%;
+}
 /*-------HOMEPAGE----*/
