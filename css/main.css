@@ -73,7 +73,6 @@ a {
 	padding: 1% 1% 1% 1%;
 	text-align: center;
 	background: rgba(100,100,100,0.6);
-	min-width: 1em;
 	max-width: 2em;
 }
 
@@ -84,7 +83,6 @@ a {
 	text-align: center;
 	background: rgba(0,0,0,0.7);
 	cursor: default;
-	min-width: 1em;
 	max-width: 2em;
 }
 /*-----MENU BAR-------*/
@@ -121,7 +119,7 @@ a {
 
 .socialIcons {
 	margin-top: 1%;
-	width: 50%;
+	width: 30%;
 }
 
 .socialIcons img{
@@ -295,14 +293,67 @@ a {
 
 .homeProfile {
 	float:left;
-	display:inline-block;
 	width:25%;
 	height:auto;
 	padding-left: 5%;
+	min-width: 200px;
 }
 
 .homeProfile img {
 	border:0.4em solid black;
 	width: 100%;
 }
+
+.profileWrapper {
+	display: table;
+}
 /*-------HOMEPAGE----*/
+
+/*-------CONTACT----*/
+.verticalCenter {
+	position: absolute;
+	display: table;
+	background: #EBEBEB;
+	width: 90%;
+	height: 30%;
+	padding: 5% 5% 5% 5%;
+	top: 30%;
+	z-index: 50;
+}
+
+.contact {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.bottomPhoto {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 30%;
+	overflow: hidden;
+}
+
+.bgPhoto img {
+	bottom: 0;
+	height:auto;
+	width: 100%;
+}
+
+.wrapper {
+	overflow: hidden;
+	height: 100%;
+}
+
+.graydient {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(150,150,150,0.5);
+	z-index: 3;
+	content: "";
+	height: 100%;
+	width: 100%;
+}
+/*-------CONTACT----*/
