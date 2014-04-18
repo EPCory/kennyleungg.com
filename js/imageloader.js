@@ -1,17 +1,32 @@
 $(document).ready(function () {
-	var images = $("img");
+	var images = $(".responsiveImage");
 	for (var imageCount = 0; imageCount < images.length; imageCount++){
 		var image = $(images[imageCount]);
 		var highresLink = image.attr("highres-src");
 		var lowresLink = image.attr("lowres-src");
 		if (highresLink && lowresLink){
-			if (screen.width > 640) {
-				image.attr("src", highresLink);
+			if (screen.width > 640) 
+			{
+				if (image.is('img'))
+				{
+					image.attr("src", highresLink);
+				}
+				else if (image.is('div'))
+				{
+					image.css("background-image","url("+highresLink+")");
+				}
 
 			}
 			else
 			{
-				image.attr("src", lowresLink);
+				if (image.is('img'))
+				{
+					image.attr("src", lowresLink);
+				}
+				else if (image.is('div'))
+				{
+					image.css("background-image","url("+lowresLink+")");
+				}
 			}
 		}
 
