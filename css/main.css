@@ -326,30 +326,6 @@ a {
     vertical-align: middle;
 }
 
-.bottomPhoto {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 30%;
-	overflow: hidden;
-}
-
-.bgPhoto {
-	height: 100%;
-	overflow: hidden;
-}
-
-.bgPhoto img {
-	bottom: 0;
-	height:100%;
-	max-height: 150%;
-	width: auto;
-	min-width: 100%;
-	margin-top: -50%;
-	padding-bottom: 0;
-}
-
 .wrapper {
 	overflow: hidden;
 	height: 100%;
@@ -366,12 +342,13 @@ a {
 	width: 100%;
 }
 
-.bgPhotoTop {
+.bgPhoto {
 	height:100%;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	overflow: hidden;
+	background-position: 0 70%;
 }
 /*-------CONTACT----*/
