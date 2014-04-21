@@ -1,5 +1,5 @@
 /*-------CONTACT----*/
-.verticalCenter {
+.whitePanel {
 	position: absolute;
 	display: table;
 	background: #EBEBEB;
@@ -29,16 +29,6 @@
 	content: "";
 	height: 100%;
 	width: 100%;
-}
-
-.bgPhoto {
-	height:100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	overflow: hidden;
-	background-position: 0 70%;
 }
 
 .socialIcons {

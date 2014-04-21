@@ -1,4 +1,4 @@
-.verticalCenter {
+.darkTransparentPanel {
 	position: absolute;
 	display: table;
 	background: rgba(25,25,25,0.8);
@@ -9,12 +9,7 @@
 	z-index: 50;
 }
 
-.bgPhoto {
-	height:100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	overflow: hidden;
-	background-position: 0 70%;
+.centerWrapper {
+    display: table-cell;
+    vertical-align: middle;
 }
