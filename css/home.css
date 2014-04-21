@@ -1,0 +1,57 @@
+/*-------HOMEPAGE----*/
+.largeStaticBackground {
+	height:60%;
+	background-attachment: fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	overflow: auto;
+}
+
+.smallStaticBackground {
+	height:40%;
+	background-attachment: fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	overflow: auto;
+}
+
+.whitePanel {
+	width: 80%;
+	padding: 5% 10% 5% 10%;
+	background: #EBEBEB;
+	overflow: auto;
+}
+
+.homeProfileText {
+	float:left;
+}
+
+.homeCenteredText {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.homeProfile {
+	display: inline-block;
+	width:25%;
+	height:auto;
+	padding-left: 5%;
+	min-width: 200px;
+}
+
+.homeProfile img {
+	border:0.4em solid black;
+	width: 100%;
+	/*min-width: 200px;*/
+}
+
+.imageWrapper {
+	text-align: center;
+}
+
+.profileWrapper {
+	display: table;
+}
+/*-------HOMEPAGE----*/
