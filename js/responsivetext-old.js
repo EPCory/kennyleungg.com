@@ -28,17 +28,16 @@
       var resizer = function () {
         //Resize text, numbers were obtained manual testing
         $titleText.css('font-size', Math.max(Math.min($root.width() / (20), parseFloat('72px')), parseFloat('42px')));
-        $headerText.css('font-size', Math.max(Math.min($root.width() / (20), parseFloat('54px')), parseFloat('38px')));
+        $headerText.css('font-size', Math.max(Math.min($root.width() / (20), parseFloat('54px')), parseFloat('32px')));
         $subheaderText.css('font-size', Math.max(Math.min($root.width() / (35), parseFloat('36px')), parseFloat('28px')));
         $menuText.css('font-size', Math.max(Math.min($root.width() / (45), parseFloat('30px')), parseFloat('26px')));
         $normalText.css('font-size', Math.max(Math.min($root.width() / (55), parseFloat('28px')), parseFloat('22px')));
         $smallText.css('font-size', Math.max(Math.min($root.width() / (60), parseFloat('24px')), parseFloat('20px')));
 
         var paneText = $root.find(".paneText");
-        var pane = $root.find(".largeStaticBackground");
+        var pane = $root.find(".pane");
         if (paneText && pane) {
           var paneHeight = pane.outerHeight(true) * 0.95; //5% buffer, don't want text sticking to edge
-          console.log(paneHeight);
           paneText.each(function() {
             var currentPaneText = $(this);
             var paneHeader = currentPaneText.find(".paneHeader");
