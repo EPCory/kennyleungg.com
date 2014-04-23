@@ -1,3 +1,14 @@
+/*-----HTML WIDE-----*/
+body {
+	overflow-y: scroll;
+}
+
+html{
+	overflow-y: hidden;
+}
+/*-----HTML WIDE-----*/
+
+
 /*---TITLE---*/
 #coverPhoto {
 	height:100%;
