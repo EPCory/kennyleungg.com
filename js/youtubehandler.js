@@ -7,7 +7,7 @@ $(document).ready(function () {
 		var thumbnailLink = "http://img.youtube.com/vi/" + videoID + "/hqdefault.jpg";
 
 		videoWrap.css("background-image","url(" + coverPhotoLink + ")");
-		videoWrap.append("<div class='backgroundGradient'></div>");
+		videoWrap.append("<div class='youtubeBackgroundGradient'></div>");
 		videoWrap.append("<iframe src='http://www.youtube.com/embed/" +videoID+"' frameborder='0' allowfullscreen></iframe>");
 		// videoWrap.append("<div class='youtubeThumbnail' style=background-image:"+"url(" + coverPhotoLink + ")></div>");
 
