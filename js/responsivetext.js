@@ -35,10 +35,9 @@
         $smallText.css('font-size', Math.max(Math.min($root.width() / (60), parseFloat('24px')), parseFloat('20px')));
 
         var paneText = $root.find(".paneText");
-        var pane = $root.find(".largeStaticBackground");
+        var pane = $root.find(".pane");
         if (paneText && pane) {
           var paneHeight = pane.outerHeight(true) * 0.95; //5% buffer, don't want text sticking to edge
-          console.log(paneHeight);
           paneText.each(function() {
             var currentPaneText = $(this);
             var paneHeader = currentPaneText.find(".paneHeader");

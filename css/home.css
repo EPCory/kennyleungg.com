@@ -1,3 +1,20 @@
+/*-----HTML WIDE-----*/
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2em;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+html{
+	font-size:100%;
+	height: 100%;
+	overflow-y: hidden;
+}
+/*-----HTML WIDE-----*/
+
 /*-------HOMEPAGE----*/
 .largeStaticBackground {
 	height:60%;
