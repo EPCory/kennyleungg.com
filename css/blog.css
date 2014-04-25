@@ -47,6 +47,17 @@ html{
 /*---TITLE---*/
 
 /*---BODY---*/
+.darkTransparentPanel {
+	position: absolute;
+	display: table;
+	background: rgba(25,25,25,0.8);
+	width: 90%;
+	height: 30%;
+	padding: 5% 5% 5% 5%;
+	top: 30%;
+	z-index: 50;
+}
+
 .largeStaticBackground {
 	height:60%;
 	background-attachment: fixed;

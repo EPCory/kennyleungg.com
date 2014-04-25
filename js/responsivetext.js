@@ -24,12 +24,12 @@ $(document).ready(function () {
   var listen = function(el,on,fn){(el.addEventListener||(on='on'+on)&&el.attachEvent)(on,fn,false)};
   var resizer = function () {
     //Resize text, numbers were obtained manual testing
-    $titleText.css('font-size', Math.max(Math.min($root.width() / (20), parseFloat('72px')), parseFloat('42px')));
-    $headerText.css('font-size', Math.max(Math.min($root.width() / (20), parseFloat('54px')), parseFloat('38px')));
-    $subheaderText.css('font-size', Math.max(Math.min($root.width() / (35), parseFloat('36px')), parseFloat('28px')));
-    $menuText.css('font-size', Math.max(Math.min($root.width() / (45), parseFloat('30px')), parseFloat('26px')));
-    $normalText.css('font-size', Math.max(Math.min($root.width() / (55), parseFloat('28px')), parseFloat('22px')));
-    $smallText.css('font-size', Math.max(Math.min($root.width() / (60), parseFloat('24px')), parseFloat('20px')));
+    $titleText.css('font-size', Math.max(Math.min($root.width() / (200), parseFloat('4.5')), parseFloat('3')) + "em");
+    $headerText.css('font-size', Math.max(Math.min($root.width() / (250), parseFloat('3.2')), parseFloat('2.5')) + "em");
+    $subheaderText.css('font-size', Math.max(Math.min($root.width() / (350), parseFloat('2.0')), parseFloat('1.5')) + "em");
+    $menuText.css('font-size', Math.max(Math.min($root.width() / (450), parseFloat('2')), parseFloat('1.5')) + "em");
+    $normalText.css('font-size', Math.max(Math.min($root.width() / (550), parseFloat('1.5')), parseFloat('1.2')) + "em");
+    $smallText.css('font-size', Math.max(Math.min($root.width() / (600), parseFloat('1.3')), parseFloat('1')) + "em");
 
     var paneText = $root.find(".paneText");
     var pane = $root.find(".pane");
