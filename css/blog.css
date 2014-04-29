@@ -79,6 +79,7 @@ html{
 	background: rgba(200,200,200,0.5);
 	width: 90%;
 	padding: 5% 5% 5% 5%;
+	max-height: 100000px;
 }
 
 .youtubeWrapper {
