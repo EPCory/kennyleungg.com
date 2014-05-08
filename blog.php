@@ -43,7 +43,7 @@
 	} 
 
 	//connect to the database server 
-	$db = mysql_connect(db_server, $db_user, $db_password); 
+	$db = mysql_connect(db_server); 
 	if (!$db) { 
 	   die('Could Not Connect: ' . mysql_error()); 
 	} else { 
