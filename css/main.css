@@ -30,49 +30,128 @@ a {
 
 /*-----TEXT MODIFIERS-----*/
 .light {
-	color: rgb(205,205,205);
+	color: rgb(225,225,225);
 }
 
 .dark {
 	color: rgb(60,60,60);
 }
+
+.gray {
+	color: rgb(150,150,150);
+}
+
+.centerText {
+	width: 75%;
+	margin: 0 auto 0 auto;
+	padding: 15% 0 10% 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	line-height: normal;
+	display: block;
+}
+
+.leftText {
+	width: 75%;
+	margin: 0 auto 0 auto;
+	padding: 0 0 0 0;
+	left: 0;
+	right: 0;
+	text-align: left;
+	line-height: normal;
+}
+
+.button {
+	padding: 15px;
+	margin-top: 15px;
+	margin-bottom:15px;
+	background-color: #17810C;
+	color: #FFF;
+	display: inline-block;
+}
 /*-----TEXT MODIFIERS-----*/
 
-/*-----MENU BAR-------*/
-#menuBar {
-	display: table;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 4;
-	min-height: 50px;
-}
-
-.menuItem {
-	display: table-cell;
-	border-left: 1px solid #CCC;
-	padding: 1% 1% 1% 1%;
-	text-align: center;
-	background: rgba(65,65,65,0.95);
-	max-width: 2em;
-}
-
-.selectedMenuItem {
-	display: table-cell;
-	border-left: 1px solid #CCC;
-	padding: 1% 1% 1% 1%;
-	text-align: center;
-	background: rgba(0,0,0,0.95);
-	cursor: default;
-	max-width: 2em;
-}
-/*-----MENU BAR-------*/
-
-.bgPhoto {
-	height:100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
+/*-----IMAGE PANELS-------*/
+.largeStaticBackground {
+	height: 80%;
+	background-attachment: fixed;
 	background-size: cover;
-	overflow: hidden;
+	-webkit-background-size: cover;
+	background-position: center;
+	overflow: auto;
+}
+
+.mediumStaticBackground {
+	height: 60%;
+	background-attachment: fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	background-position: center;
+	overflow: auto;
+}
+
+.smallStaticBackground {
+	height: 40%;
+	background-attachment: fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	background-position: center;
+	overflow: auto;
+}
+
+.blackGradient {
+	background-color: rgba(0,0,0,0.75);
+}
+
+.whitePanel {
+	width: 100%;
+	padding: 5% 0 5% 0;
+	background: #EBEBEB;
+	overflow: auto;
+}
+
+.darkPanel {
+	width: 100%;
+	padding: 5% 10% 5% 0;
+	background: #1F1F1F;
+	overflow: auto;
+}
+
+.grayPanel {
+	width: 100%;
+	padding: 5% 0 5% 0;
+	background: #333;
+	overflow: auto;
+}
+/*-----IMAGE PANELS-------*/
+
+.profile {
+	padding-left: 15%;
+	width:30%;
+	float: left;
+	margin-right: 5%;
+	max-width: 200px;
+	min-width: 100px;
+	text-align: center;
+}
+
+.profile img {
+	border-radius: 50%;
+	width: 100%;
+}
+
+.socialIcons {
+	margin-top: 1%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.socialIcons a {
+	display: inline-block;
+}
+
+.socialIcons img {
+	border-radius: 30%;
+	width: 4em;
 }

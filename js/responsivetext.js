@@ -22,16 +22,16 @@ $(document).ready(function () {
     var subheaderText = $root.find(".subheaderText");
     var normalText = $root.find(".normalText");
     var smallText = $root.find(".smallText");
-    var menuText = $root.find(".menuText");
+    var tinyText = $root.find(".tinyText");
 
 
     //Resize text, numbers were obtained manual testing
-    titleText.css('font-size', Math.max(Math.min($root.width() / (200), parseFloat('4.5')), parseFloat('3')) + "em");
-    headerText.css('font-size', Math.max(Math.min($root.width() / (250), parseFloat('3.2')), parseFloat('2.5')) + "em");
-    subheaderText.css('font-size', Math.max(Math.min($root.width() / (350), parseFloat('2.0')), parseFloat('1.5')) + "em");
-    menuText.css('font-size', Math.max(Math.min($root.width() / (450), parseFloat('2')), parseFloat('1.5')) + "em");
+    titleText.css('font-size', Math.max(Math.min($root.width() / (200), parseFloat('6')), parseFloat('3')) + "em");
+    headerText.css('font-size', Math.max(Math.min($root.width() / (250), parseFloat('3.5')), parseFloat('2.5')) + "em");
+    subheaderText.css('font-size', Math.max(Math.min($root.width() / (250), parseFloat('2.0')), parseFloat('1.5')) + "em");
     normalText.css('font-size', Math.max(Math.min($root.width() / (550), parseFloat('1.5')), parseFloat('1.2')) + "em");
-    smallText.css('font-size', Math.max(Math.min($root.width() / (600), parseFloat('1.3')), parseFloat('1')) + "em");
+    smallText.css('font-size', Math.max(Math.min($root.width() / (600), parseFloat('1.0')), parseFloat('0.7')) + "em");
+    tinyText.css('font-size', Math.max(Math.min($root.width() / (600), parseFloat('0.8')), parseFloat('0.5')) + "em");
 
     var paneText = $root.find(".paneText");
     var pane = $root.find(".pane");
