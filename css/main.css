@@ -101,6 +101,7 @@ a {
 	padding: 5% 0 5% 0;
 	background: #EBEBEB;
 	overflow: auto;
+	max-height: 1000000px;
 }
 
 .darkPanel {
@@ -108,6 +109,7 @@ a {
 	padding: 5% 10% 5% 0;
 	background: #1F1F1F;
 	overflow: auto;
+	max-height: 1000000px;
 }
 
 .grayPanel {
