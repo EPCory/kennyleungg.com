@@ -42,17 +42,19 @@
 			</div>
 		</div>
 	</div>
-	<div class="mediumStaticBackground" style="background-image:url('images/apple_products.jpg')" >
+	<div class="dynamicStaticBackground" style="background-image:url('images/apple_products.jpg')" >
 		<div class="blackGradient">
-			<div class="light normalText leftText" style="padding-top:50px">
+			<div class="light leftText" style="padding-top:5%;padding-bottom:5%">
 				<ul>
-					<li> Management Engineering undergrad from the Unversity of Waterloo </li>
-					<li> 4+ years of experience in managing and developing software </li>
-					<li> Always looking to learn new concepts, and motivated by new challenges </li>
+					<li class="normalText"> Management Engineering undergrad from the Unversity of Waterloo </li>
+					<li class="normalText"> 4+ years of experience in managing and developing software </li>
+					<li class="normalText"> Always looking to learn new concepts, and motivated by new challenges </li>
 					<li style="list-style:none">&nbsp;</li>
 					<li style="list-style:none;"> 
-						<span style="margin-right:15px">Want to know more?</span>
-						<a class="smallText button" href="about.php" style="display:inline-block;">View Experience</a>
+						<span class="normalText" style="margin-right:15px">Want to know more?</span>
+						<a href="about.php" style="display:inline-block;">
+							<span class="smallText button">View Experiences</span>
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -71,7 +73,7 @@
 	</div>
 	
 	<div class="light grayPanel">
-		<div class="leftText" style="padding-left:10%">
+		<div style="padding-left:5%;">
 			<span class="headerText" >Let's connect! <br/> </span>
 
 			<a href="mailto:KennyLeungg@gmail.com" class="subheaderText light">KennyLeungg@gmail.com</a>

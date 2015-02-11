@@ -67,7 +67,6 @@ a {
 	margin-bottom:15px;
 	background-color: #17810C;
 	color: #FFF;
-	display: inline-block;
 }
 /*-----TEXT MODIFIERS-----*/
 
@@ -81,8 +80,7 @@ a {
 	overflow: hidden;
 }
 
-.mediumStaticBackground {
-	height: 500px;
+.dynamicStaticBackground {
 	background-attachment: fixed;
 	background-size: cover;
 	-webkit-background-size: cover;

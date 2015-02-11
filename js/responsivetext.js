@@ -29,7 +29,7 @@ $(document).ready(function () {
     headerText.css('font-size', Math.max(Math.min($root.width() / (300), parseFloat('3.0')), parseFloat('2.0')) + "em");
     subheaderText.css('font-size', Math.max(Math.min($root.width() / (450), parseFloat('2.0')), parseFloat('1.5')) + "em");
     normalText.css('font-size', Math.max(Math.min($root.width() / (550), parseFloat('1.75')), parseFloat('1.2')) + "em");
-    smallText.css('font-size', Math.max(Math.min($root.width() / (800), parseFloat('0.8')), parseFloat('0.6')) + "em");
+    smallText.css('font-size', Math.max(Math.min($root.width() / (800), parseFloat('1.2')), parseFloat('0.6')) + "em");
 
     var paneText = $root.find(".paneText");
     var pane = $root.find(".pane");

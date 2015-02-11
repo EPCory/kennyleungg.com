@@ -23,7 +23,9 @@
 			<div class="headerText">Kenny Leung</div>
 			<div class="normalText">Engineer / Software Developer / Product Manager</div>
 			<br/>
-			<a class="button" href="resume.pdf" style="margin-left:0px">View PDF version</a>
+			<a href="resume.pdf" style="margin:15px">
+				<span class="button smallText">View PDF version</span>
+			</a>
 		</div>
 	</div>
 	<div class="part pane">
@@ -170,7 +172,7 @@
 	</div>
 	<div class="part">
 		<div class="dark whitePanel">
-			<div class="leftText" style="padding-left:10%">
+			<div style="padding-left:5%">
 				<span class="headerText" >Let's connect! <br/> </span>
 
 				<a href="mailto:KennyLeungg@gmail.com" class="subheaderText dark">KennyLeungg@gmail.com</a>
