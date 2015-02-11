@@ -8,7 +8,6 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css"/>
 	<link rel='stylesheet' type='text/css' href='css/open-sans.css'>
 	<script type="text/javascript" src="js/responsivetext.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<div class="largeStaticBackground" style="background-image:url('images/pandas.jpg');" >
@@ -68,7 +67,7 @@
 			<div class="headerText">
 				What is KennyLeungg.com?
 			</div>
-			<div class="normalText">
+			<div class="normalText" style="max-height:100000px;">
 				This website was created as a way to express myself and host some personal project. 
 				I also want to use this website to gain a better understanding about web development, while having fun designing my site.
 			</div>
