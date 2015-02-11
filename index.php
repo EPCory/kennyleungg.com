@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css"/>
 	<link rel='stylesheet' type='text/css' href='css/open-sans.css'>
 	<script type="text/javascript" src="js/responsivetext.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<div class="largeStaticBackground" style="background-image:url('images/pandas.jpg');" >
