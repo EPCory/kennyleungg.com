@@ -21,9 +21,9 @@
 				<img src="images/profile.jpg"/>
 			</div>
 			<div class="headerText">Kenny Leung</div>
-			<div class="normalText">Engineer / Software Developer / Product Manager</div>
+			<div class="normalText" style="margin-bottom:25px">Engineer / Software Developer / Product Manager</div>
 			<br/>
-			<a href="resume.pdf" style="margin:15px">
+			<a href="resume.pdf" style="display:inline-block">
 				<span class="button smallText">View PDF version</span>
 			</a>
 		</div>

@@ -68,8 +68,8 @@
 				What is KennyLeungg.com?
 			</div>
 			<div class="normalText" style="max-height:100000px;">
-				This website was created as a way to express myself and host some personal project. 
-				I also want to use this website to gain a better understanding about web development, while having fun designing my site.
+				This website was created as a way to express myself and host some personal projects. 
+				I also want to use this website to learn the fundamentals of web development, while having fun designing my site.
 			</div>
 		</div>
 	</div>
