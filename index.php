@@ -10,7 +10,7 @@
 	<script type="text/javascript" src="js/responsivetext.js"></script>
 </head>
 <body>
-	<div class="largeStaticBackground" style="background-image:url('images/pandas.jpg');height:600px" >
+	<div class="largeStaticBackground" style="background-image:url('images/pandas.jpg');" >
 		<div class="blackGradient" style="display:table;text-align:center" >
 			<div class="light centerText" style="display:table-cell;vertical-align:middle">
 				<div class="titleText">
@@ -44,7 +44,7 @@
 	</div>
 	<div class="mediumStaticBackground" style="background-image:url('images/apple_products.jpg')" >
 		<div class="blackGradient">
-			<div class="light normalText leftText">
+			<div class="light normalText leftText" style="padding-top:50px">
 				<ul>
 					<li> Management Engineering undergrad from the Unversity of Waterloo </li>
 					<li> 4+ years of experience in managing and developing software </li>
@@ -52,7 +52,7 @@
 					<li style="list-style:none">&nbsp;</li>
 					<li style="list-style:none;"> 
 						<span style="margin-right:15px">Want to know more?</span>
-						<a class="smallText button" href="about.php" style="display:inline-block;">See my past experiences</a>
+						<a class="smallText button" href="about.php" style="display:inline-block;">View Experience</a>
 					</li>
 				</ul>
 			</div>

@@ -19,7 +19,7 @@ ul {
 }
 
 li {
-	margin-top:0.6em;
+	line-height: 2.2em;
 }
 
 a {
@@ -49,20 +49,16 @@ a {
 	right: 0;
 	text-align: center;
 	line-height: normal;
-	display: table-cell;
-	vertical-align: middle;
 }
 
 .leftText {
 	width: 75%;
 	margin: 0 auto 0 auto;
-	padding: 0 10% 0 10%;
+	padding: 0 0 0 0;
 	left: 0;
 	right: 0;
 	text-align: left;
 	line-height: normal;
-	display: table-cell;
-	vertical-align: middle;
 }
 
 .button {
@@ -77,21 +73,21 @@ a {
 
 /*-----IMAGE PANELS-------*/
 .largeStaticBackground {
-	height: 80%;
+	height: 600px;
 	background-attachment: fixed;
 	background-size: cover;
 	-webkit-background-size: cover;
 	background-position: center;
-	overflow: auto;
+	overflow: hidden;
 }
 
 .mediumStaticBackground {
-	height: 60%;
+	height: 500px;
 	background-attachment: fixed;
 	background-size: cover;
 	-webkit-background-size: cover;
 	background-position: center;
-	overflow: auto;
+	overflow: hidden;
 }
 
 .smallStaticBackground {
@@ -107,8 +103,6 @@ a {
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0,0,0,0.75);
-	display: table;
-	text-align: center;
 }
 
 .whitePanel {
