@@ -169,8 +169,8 @@
 		</div>
 	</div>
 	<div class="part">
-		<div class="dark whitePanel leftText">
-			<div  style="padding-left:10%">
+		<div class="dark whitePanel">
+			<div class="leftText" style="padding-left:10%">
 				<span class="headerText" >Let's connect! <br/> </span>
 
 				<a href="mailto:KennyLeungg@gmail.com" class="subheaderText dark">KennyLeungg@gmail.com</a>

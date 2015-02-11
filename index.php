@@ -10,9 +10,9 @@
 	<script type="text/javascript" src="js/responsivetext.js"></script>
 </head>
 <body>
-	<div class="largeStaticBackground" style="background-image:url('images/pandas.jpg')" >
-		<div class="blackGradient" style="height:100%" >
-			<div class="light centerText">
+	<div class="largeStaticBackground" style="background-image:url('images/pandas.jpg');height:600px" >
+		<div class="blackGradient" style="display:table;text-align:center" >
+			<div class="light centerText" style="display:table-cell;vertical-align:middle">
 				<div class="titleText">
 					Hi! I'm Kenny
 				</div>
@@ -32,7 +32,7 @@
 			<div class="profile">
 				<img src="images/profile3.jpg"/>
 			</div>
-			<div class="dark leftText" style="float:left;width:50%">
+			<div class="dark" style="float:left;width:50%">
 				<div class="headerText">
 					Who am I?
 				</div>
@@ -43,8 +43,8 @@
 		</div>
 	</div>
 	<div class="mediumStaticBackground" style="background-image:url('images/apple_products.jpg')" >
-		<div class="blackGradient" style="height:100%" >
-			<div class="light normalText leftText" style="padding-top:5%">
+		<div class="blackGradient">
+			<div class="light normalText leftText">
 				<ul>
 					<li> Management Engineering undergrad from the Unversity of Waterloo </li>
 					<li> 4+ years of experience in managing and developing software </li>
@@ -70,8 +70,8 @@
 		</div>
 	</div>
 	
-	<div class="light grayPanel leftText">
-		<div style="padding-left:10%">
+	<div class="light grayPanel">
+		<div class="leftText" style="padding-left:10%">
 			<span class="headerText" >Let's connect! <br/> </span>
 
 			<a href="mailto:KennyLeungg@gmail.com" class="subheaderText light">KennyLeungg@gmail.com</a>
