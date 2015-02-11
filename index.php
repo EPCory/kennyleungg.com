@@ -52,7 +52,9 @@
 					<li class="normalText"> Always looking to learn new concepts, and motivated by new challenges </li>
 					<li style="list-style:none">&nbsp;</li>
 					<li style="list-style:none;"> 
-						<span class="normalText" style="margin-right:15px">Want to know more?</span>
+						<span class="normalText" style="margin-right:15px;margin-bottom:10px;">
+							Want to know more?
+						</span>
 						<a href="about.php" style="display:inline-block;">
 							<span class="smallText button">View Experiences</span>
 						</a>

@@ -73,7 +73,7 @@ a {
 
 /*-----IMAGE PANELS-------*/
 .largeStaticBackground {
-	height: 600px;
+	height: 80%;
 	background-attachment: fixed;
 	background-size: cover;
 	-webkit-background-size: cover;
@@ -121,8 +121,8 @@ a {
 	padding-left: 15%;
 	width:30%;
 	float: left;
-	margin-right: 5%;
-	max-width: 200px;
+	margin-right: 3%;
+	max-width: 150px;
 	min-width: 100px;
 	text-align: center;
 }
@@ -145,4 +145,5 @@ a {
 .socialIcons img {
 	border-radius: 30%;
 	width: 4em;
+	max-width: 64px;
 }
