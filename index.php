@@ -46,7 +46,7 @@
 		<div class="blackGradient">
 			<div class="light leftText" style="padding-top:5%;padding-bottom:8%">
 				<ul>
-					<li class="normalText"> Management Engineering undergrad from the Unversity of Waterloo </li>
+					<li class="normalText"> Management Engineering undergrad from the University of Waterloo </li>
 					<li class="normalText"> 4+ years of experience in managing and developing software </li>
 					<li class="normalText"> Always looking to learn new concepts, and motivated by new challenges </li>
 					<li style="list-style:none">&nbsp;</li>
